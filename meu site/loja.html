@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="codigos/loja.css">
+</head>
+<body>
+    
+    <div>
+        <ul class="menu">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        
+        <img class="logo" src="imagens/logo-loja.png" alt="Logo da Loja">
+        <h1>Bem-vindo à Nossa Loja</h1>
+    </div>
+    
+    <p><strong>Em breve os produtos estarão disponíveis aqui!</strong></p>
+    
+    <!-- Lista de produtos -->
+    <div class="produtos-container">
+        <!-- Produto 1 -->
+        <div class="produto-caixa">
+            <img src="imagens/integral.JPEG" alt="Produto 1">
+            <h3>Pão integral</h3>
+            <p>Sem gutlem e feito com ódio</p>
+            <p class="preco">R$ 10,00</p>
+            <input type="number" id="quantidadeProduto1" class="input-box" placeholder="Quantidade" min="1">
+            <button class="btn-comprar" onclick="adicionarAoCarrinho('Produto 1', 49.99, 'quantidadeProduto1')">Adicionar ao Carrinho</button>
+        </div>
+
+        
+        <div class="produto-caixa">
+            <img src="imagens/baguete.jfif" alt="Produto 2">
+            <h3>Baguete</h3>
+            <p>Descrição breve do Produto 2. Ideal para o seu dia a dia.</p>
+            <p class="preco">R$ 9,99</p>
+            <input type="number" id="quantidadeProduto2" class="input-box" placeholder="Quantidade" min="1">
+            <button class="btn-comprar" onclick="adicionarAoCarrinho('Produto 2', 69.99, 'quantidadeProduto2')">Adicionar ao Carrinho</button>
+        </div>
+
+    
+        <div class="produto-caixa">
+            <img src="imagens/pao.JPEG" alt="Pão Frances">
+            <h3>Pão Frances</h3>
+            <p>Feito sob enconmenda</p>
+            <p class="preco">R$ 39,99/kg</p>
+            <input type="number" id="quantidadeProduto3" class="input-box" placeholder="Quantidade" min="1">
+            <button class="btn-comprar" onclick="adicionarAoCarrinho('Produto 3', 89.99, 'quantidadeProduto3')">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+ 
+    <div class="caixa-container">
+        <h2>Carrinho de Compras</h2>
+        <div id="carrinhoLista" class="itens-lista">
+
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <img src="imagens/carrinho-compra.jpg" width="10%">
+    </div>
+    
+    <br>
+    
+    <div class="conteudo">
+        <p>Enquanto isso, confira este vídeo com mais informações:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OpImsaS6l1M" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <h2>Nosso Local</h2>
+    <div class="conteudo">
+        <div class="conteudo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319.37036527514323!2d-50.15985916826591!3d-25.092949782437657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e81a408f7f0317%3A0x2eab1d0cba2411e1!2sCol%C3%A9gio%20Estadual%20Regente%20Feij%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1745329629246!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="rodape">Site feito por Heron, Leandro e Gustavo P. do 2°B DS</div>
+</body>
+</html>
